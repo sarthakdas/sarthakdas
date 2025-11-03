@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume & Downloads — Sarthak Das</title>
+  <meta name="description" content="Request the latest CV or press materials from Sarthak Das." />
+  <meta property="og:title" content="Resume & Downloads — Sarthak Das" />
+  <meta property="og:description" content="Request the latest CV or press materials from Sarthak Das." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html#home" class="brand"><span class="brand-mark"></span><span>Sarthak Das</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#work" class="muted">Work</a>
+      <a href="index.html#about" class="muted">About</a>
+      <a href="index.html#writing" class="muted">Writing</a>
+      <a href="index.html#contact" class="muted">Contact</a>
+    </div>
+    <button class="menu" id="openMenu" aria-label="Menu" title="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile sheet -->
+<div id="mobilePanel" aria-hidden="true">
+  <div class="sheet">
+    <div class="row" style="margin-bottom:14px;">
+      <strong>Menu</strong>
+      <button class="btn" id="closeMenu">Close</button>
+    </div>
+    <div class="stack">
+      <a href="index.html#work" class="muted" onclick="hideMenu()">Work</a>
+      <a href="index.html#about" class="muted" onclick="hideMenu()">About</a>
+      <a href="index.html#writing" class="muted" onclick="hideMenu()">Writing</a>
+      <a href="index.html#contact" class="muted" onclick="hideMenu()">Contact</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container grid grid-2">
+      <div>
+        <span class="eyebrow">Resume</span>
+        <h1>Resume & Press Kit</h1>
+        <p class="lead">Reach out directly if you'd like a copy of my CV or press materials.</p>
+        <div class="row" style="gap:12px; flex-wrap:wrap; margin-top:24px;">
+          <a class="btn btn-primary" href="index.html#contact">Contact</a>
+        </div>
+        <p class="muted" style="margin-top:18px;">I'll share the most relevant documents once we connect.</p>
+      </div>
+      <div class="media-frame ratio ratio-4x3" data-label="Headshot or cover">
+        <img src="assets/images/placeholder.svg" alt="Resume cover placeholder" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2" style="align-items:flex-start;">
+      <article>
+        <span class="eyebrow">Highlights</span>
+        <ul class="list">
+          <li>Insert three bullets tailored to the roles you want.</li>
+          <li>Call out notable employers, outcomes, or press.</li>
+          <li>Link to open source, patents, or talks.</li>
+        </ul>
+      </article>
+      <article>
+        <span class="eyebrow">Assets</span>
+        <div class="media-grid">
+          <a class="media-frame ratio ratio-1x1" data-label="Headshot" href="assets/images/placeholder.svg">
+            <img src="assets/images/placeholder.svg" alt="Headshot placeholder" loading="lazy" />
+          </a>
+          <a class="media-frame ratio ratio-1x1" data-label="Logo" href="assets/images/placeholder.svg">
+            <img src="assets/images/placeholder.svg" alt="Logo placeholder" loading="lazy" />
+          </a>
+        </div>
+        <p class="muted" style="margin-top:12px;">Replace links with actual files for press or partners.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-cta">
+    <div class="container row">
+      <div>
+        <h2>Need a copy by email?</h2>
+        <p class="muted">Shoot a note and I'll send the latest CV or portfolio.</p>
+      </div>
+      <div class="row" style="gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="mailto:me@sarthakdas.com">Email</a>
+        <a class="btn btn-ghost" href="index.html#work">View work</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container row">
+    <p>© <span id="year"></span> Sarthak Das. All rights reserved.</p>
+    <div style="display:flex; gap:18px;">
+      <a class="muted" href="legal/privacy.html">Privacy</a>
+      <a class="muted" href="legal/terms.html">Terms</a>
+      <a class="muted" href="legal/imprint.html">Imprint</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Genesis & MuJoCo Tooling — Case Study</title>
+  <meta name="description" content="Template for Genesis / MuJoCo tooling project page." />
+  <meta property="og:title" content="Genesis & MuJoCo Tooling — Case Study" />
+  <meta property="og:description" content="Template for Genesis / MuJoCo tooling project page." />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html#home" class="brand"><span class="brand-mark"></span><span>Sarthak Das</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#work" class="muted">Work</a>
+      <a href="../index.html#about" class="muted">About</a>
+      <a href="../index.html#writing" class="muted">Writing</a>
+      <a href="../index.html#contact" class="muted">Contact</a>
+    </div>
+    <button class="menu" id="openMenu" aria-label="Menu" title="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile sheet -->
+<div id="mobilePanel" aria-hidden="true">
+  <div class="sheet">
+    <div class="row" style="margin-bottom:14px;">
+      <strong>Menu</strong>
+      <button class="btn" id="closeMenu">Close</button>
+    </div>
+    <div class="stack">
+      <a href="../index.html#work" class="muted" onclick="hideMenu()">Work</a>
+      <a href="../index.html#about" class="muted" onclick="hideMenu()">About</a>
+      <a href="../index.html#writing" class="muted" onclick="hideMenu()">Writing</a>
+      <a href="../index.html#contact" class="muted" onclick="hideMenu()">Contact</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container grid grid-2">
+      <div>
+        <span class="eyebrow">Case Study</span>
+        <h1>Genesis / MuJoCo Tooling</h1>
+        <p class="lead">Describe the simulation, orchestration, or tooling win in a sentence.</p>
+        <div class="row" style="gap:18px; flex-wrap:wrap; margin-top:20px; align-items:flex-start;">
+          <div>
+            <strong>Role</strong>
+            <p class="muted">Simulation Lead</p>
+          </div>
+          <div>
+            <strong>Timeline</strong>
+            <p class="muted">Add dates</p>
+          </div>
+          <div>
+            <strong>Stack</strong>
+            <p class="muted">Genesis · MuJoCo · Python</p>
+          </div>
+        </div>
+        <div class="row" style="gap:12px; justify-content:flex-start; margin-top:24px; flex-wrap:wrap;">
+          <a class="btn" href="../index.html#contact">Book a consult</a>
+          <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noreferrer">Repo ↗</a>
+        </div>
+      </div>
+      <div class="media-frame ratio ratio-4x3" data-label="Hero image">
+        <img src="../assets/images/placeholder.svg" alt="Genesis and MuJoCo tooling hero placeholder" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Simulation stack</span>
+        <h2>What you delivered</h2>
+        <p class="lead">Outline the pipelines, launches, or control loops that made this tooling click.</p>
+        <ul class="list">
+          <li>Parameterised scene builders for multi-robot setups.</li>
+          <li>Camera + sensor drivers with configurable latency.</li>
+          <li>Reusable launch configs for lab and CI.</li>
+        </ul>
+      </article>
+      <article>
+        <span class="eyebrow">Integrations</span>
+        <h2>Where it fits</h2>
+        <ul class="list">
+          <li>Hooked into training pipelines.</li>
+          <li>Connected with physical rigs for hardware testing.</li>
+          <li>Synced logging + visualisation dashboards.</li>
+        </ul>
+        <p class="muted">Adjust copy to match the integrations you actually shipped.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <span class="eyebrow">Gallery</span>
+      <h2>Sim & lab visuals</h2>
+      <p class="lead">Add renderings, timelines, or workflow diagrams.</p>
+      <div class="media-grid" style="margin-top:18px;">
+        <div class="media-frame ratio ratio-16x9" data-label="Scene setup">
+          <img src="../assets/images/placeholder.svg" alt="Simulation gallery placeholder 1" loading="lazy" />
+        </div>
+        <div class="media-frame ratio ratio-16x9" data-label="Sensor view">
+          <img src="../assets/images/placeholder.svg" alt="Simulation gallery placeholder 2" loading="lazy" />
+        </div>
+        <div class="media-frame ratio ratio-16x9" data-label="Control UI">
+          <img src="../assets/images/placeholder.svg" alt="Simulation gallery placeholder 3" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Notes</span>
+        <h2>Implementation details</h2>
+        <p>Fill in architecture decisions, libraries you leaned on, and lessons learned.</p>
+      </article>
+      <article>
+        <span class="eyebrow">Results</span>
+        <h2>Impact</h2>
+        <ul class="list">
+          <li>Time saved per experiment or iteration.</li>
+          <li>Robots supported concurrently.</li>
+          <li>Reduction in lab setup friction.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-cta">
+    <div class="container row">
+      <div>
+        <h2>Need simulation tooling?</h2>
+        <p class="muted">Share your lab stack and I’ll draft an integration plan.</p>
+      </div>
+      <div class="row" style="gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container row">
+    <p>© <span id="year"></span> Sarthak Das. All rights reserved.</p>
+    <div style="display:flex; gap:18px;">
+      <a class="muted" href="../legal/privacy.html">Privacy</a>
+      <a class="muted" href="../legal/terms.html">Terms</a>
+      <a class="muted" href="../legal/imprint.html">Imprint</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

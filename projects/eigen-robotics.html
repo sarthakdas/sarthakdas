@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eigen — Unified Robotics Framework</title>
+  <meta name="description" content="Eigen is a Python-first robotics framework that unifies simulation and hardware for seamless robot learning." />
+  <meta property="og:title" content="Eigen — Unified Robotics Framework" />
+  <meta property="og:description" content="Eigen is a Python-first robotics framework that unifies simulation and hardware for seamless robot learning." />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html#home" class="brand"><span class="brand-mark"></span><span>Sarthak Das</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#work" class="muted">Work</a>
+      <a href="../index.html#about" class="muted">About</a>
+      <a href="../index.html#writing" class="muted">Writing</a>
+      <a href="../index.html#contact" class="muted">Contact</a>
+    </div>
+    <button class="menu" id="openMenu" aria-label="Menu" title="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile sheet -->
+<div id="mobilePanel" aria-hidden="true">
+  <div class="sheet">
+    <div class="row" style="margin-bottom:14px;">
+      <strong>Menu</strong>
+      <button class="btn" id="closeMenu">Close</button>
+    </div>
+    <div class="stack">
+      <a href="../index.html#work" class="muted" onclick="hideMenu()">Work</a>
+      <a href="../index.html#about" class="muted" onclick="hideMenu()">About</a>
+      <a href="../index.html#writing" class="muted" onclick="hideMenu()">Writing</a>
+      <a href="../index.html#contact" class="muted" onclick="hideMenu()">Contact</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container grid grid-2">
+      <div>
+        <span class="eyebrow">Case Study</span>
+        <h1>Eigen Robotics</h1>
+        <p class="lead">Eigen is a Python-first robotics framework that keeps simulation and hardware in lockstep so teams can move from idea to deployment without rebuilding their stack.</p>
+        <div class="row" style="gap:18px; flex-wrap:wrap; margin-top:20px; align-items:flex-start;">
+          <div>
+            <strong>Role</strong>
+            <p class="muted">Founder · Technical Lead</p>
+          </div>
+          <div>
+            <strong>Timeline</strong>
+            <p class="muted">2024—Ongoing</p>
+          </div>
+          <div>
+            <strong>Stack</strong>
+            <p class="muted">Python · PyTorch · ROS 2 · MuJoCo</p>
+          </div>
+        </div>
+        <div class="row" style="gap:12px; justify-content:flex-start; margin-top:24px; flex-wrap:wrap;">
+          <a class="btn" href="../index.html#contact">Start a project</a>
+          <a class="btn btn-ghost" href="https://github.com/Eigen-Robotics/Eigen-Robotics" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="media-frame ratio ratio-4x3" data-label="Hero image">
+        <img src="../assets/images/placeholder.svg" alt="Eigen robotics framework hero illustration placeholder" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Overview</span>
+        <h2>Bringing robotics frameworks up to speed</h2>
+        <p class="lead">Over the past decade, machine learning took off because frameworks like PyTorch and TensorFlow made iteration repeatable, abstracted away low-level engineering, and opened the door for reproducible research.</p>
+        <p>Robotics never enjoyed the same leverage. Powerhouse stacks such as ROS and Drake remain indispensable yet daunting, demanding platform-specific builds and deep systems expertise. Most labs still juggle a “three-codebases problem”: one for simulation, another for validation, and a final one for the real robot—introducing friction and failure at every handoff.</p>
+        <p>Eigen breaks that loop. The framework delivers a unified, lightweight interface that spans simulation and hardware, allowing researchers to prototype in Python, keep their control loops intact, and graduate from experiment to deployment without duplicating code.</p>
+        <ul class="list">
+          <li>Standardises how robots, simulators, clocks, and sensors communicate inside a single Python project.</li>
+          <li>Integrates naturally with ecosystems like PyTorch, Jupyter, and OpenAI Gym so ML workflows remain intact.</li>
+          <li>Makes swapping hardware or adding new devices routine instead of a rewrite.</li>
+        </ul>
+      </article>
+      <article>
+        <span class="eyebrow">Responsibilities</span>
+        <h2>What you owned</h2>
+        <ul class="list">
+          <li>Defined Eigen’s unified API that keeps simulation and physical robots behaviourally identical.</li>
+          <li>Built adapters for vendor Python SDKs, ROS tooling, and timing layers to eliminate the three-codebases gap.</li>
+          <li>Shipped packaging, documentation, and starter notebooks that make onboarding as simple as opening Jupyter.</li>
+        </ul>
+        <p class="muted">Focused on delivering a framework that lets robot-learning teams scale without rebuilding infrastructure.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <span class="eyebrow">Gallery</span>
+      <h2>Drop visuals here</h2>
+      <p class="lead">Use the grid for screenshots, lab shots, or diagrams. Duplicate frames as needed.</p>
+      <div class="media-grid" style="margin-top:18px;">
+        <div class="media-frame ratio ratio-16x9" data-label="Image 1">
+          <img src="../assets/images/placeholder.svg" alt="Gallery placeholder 1" loading="lazy" />
+        </div>
+        <div class="media-frame ratio ratio-16x9" data-label="Image 2">
+          <img src="../assets/images/placeholder.svg" alt="Gallery placeholder 2" loading="lazy" />
+        </div>
+        <div class="media-frame ratio ratio-16x9" data-label="Image 3">
+          <img src="../assets/images/placeholder.svg" alt="Gallery placeholder 3" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Process</span>
+        <h2>How you built it</h2>
+        <p>Mapped the end-to-end workflow from notebook prototypes through deployment to pinpoint where robotics teams were rewriting code. Profiled ROS, vendor APIs, and simulators to understand divergent assumptions about clocks, state, and coordination.</p>
+        <p>Designed a Python-first abstraction layer with pluggable drivers and simulation bridges, prototyped it across MuJoCo and Isaac stacks, then validated on Franka, Kinova, and Unitree hardware. Rounded out the release with packaging, tutorials, and CI that keeps adapters reliable as the ecosystem evolves.</p>
+      </article>
+      <article>
+        <span class="eyebrow">Outcomes</span>
+        <h2>What changed</h2>
+        <ul class="list">
+          <li>Collapsed simulation, testing, and deployment into one codebase, removing brittle script handoffs.</li>
+          <li>Dropped new hardware bring-up time from weeks to hours with modular, vendor-agnostic adapters.</li>
+          <li>Enabled reliable sim-to-real transfer by running the same control loops against synchronized clocks and sensors.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-cta">
+    <div class="container row">
+      <div>
+        <h2>Have a robotics challenge?</h2>
+        <p class="muted">Reach out for collaborations, advisory, or build partnerships.</p>
+      </div>
+      <div class="row" style="gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container row">
+    <p>© <span id="year"></span> Sarthak Das. All rights reserved.</p>
+    <div style="display:flex; gap:18px;">
+      <a class="muted" href="../legal/privacy.html">Privacy</a>
+      <a class="muted" href="../legal/terms.html">Terms</a>
+      <a class="muted" href="../legal/imprint.html">Imprint</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

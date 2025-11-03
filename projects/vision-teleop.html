@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vision & Teleop — Case Study</title>
+  <meta name="description" content="Template for teleoperation and vision tooling project page." />
+  <meta property="og:title" content="Vision & Teleop — Case Study" />
+  <meta property="og:description" content="Template for teleoperation and vision tooling project page." />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html#home" class="brand"><span class="brand-mark"></span><span>Sarthak Das</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#work" class="muted">Work</a>
+      <a href="../index.html#about" class="muted">About</a>
+      <a href="../index.html#writing" class="muted">Writing</a>
+      <a href="../index.html#contact" class="muted">Contact</a>
+    </div>
+    <button class="menu" id="openMenu" aria-label="Menu" title="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile sheet -->
+<div id="mobilePanel" aria-hidden="true">
+  <div class="sheet">
+    <div class="row" style="margin-bottom:14px;">
+      <strong>Menu</strong>
+      <button class="btn" id="closeMenu">Close</button>
+    </div>
+    <div class="stack">
+      <a href="../index.html#work" class="muted" onclick="hideMenu()">Work</a>
+      <a href="../index.html#about" class="muted" onclick="hideMenu()">About</a>
+      <a href="../index.html#writing" class="muted" onclick="hideMenu()">Writing</a>
+      <a href="../index.html#contact" class="muted" onclick="hideMenu()">Contact</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container grid grid-2">
+      <div>
+        <span class="eyebrow">Case Study</span>
+        <h1>Vision & Teleop</h1>
+        <p class="lead">Capture the story about teleoperation, streaming, or perception work.</p>
+        <div class="row" style="gap:18px; flex-wrap:wrap; margin-top:20px; align-items:flex-start;">
+          <div>
+            <strong>Role</strong>
+            <p class="muted">ML Engineer · Teleop</p>
+          </div>
+          <div>
+            <strong>Timeline</strong>
+            <p class="muted">Add dates</p>
+          </div>
+          <div>
+            <strong>Stack</strong>
+            <p class="muted">C++, Python, WebRTC</p>
+          </div>
+        </div>
+        <div class="row" style="gap:12px; justify-content:flex-start; margin-top:24px; flex-wrap:wrap;">
+          <a class="btn" href="../index.html#contact">Let’s talk</a>
+          <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noreferrer">Repo ↗</a>
+        </div>
+      </div>
+      <div class="media-frame ratio ratio-4x3" data-label="Hero image">
+        <img src="../assets/images/placeholder.svg" alt="Vision and teleop hero placeholder" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Mission control</span>
+        <h2>System summary</h2>
+        <p class="lead">Explain how operators, perception, and control link together.</p>
+        <ul class="list">
+          <li>Real-time streaming constraints solved.</li>
+          <li>Interfaces or command surfaces you designed.</li>
+          <li>Data capture and playback pipelines.</li>
+        </ul>
+      </article>
+      <article>
+        <span class="eyebrow">Ops</span>
+        <h2>Field learnings</h2>
+        <ul class="list">
+          <li>Latency budgets and network trade-offs.</li>
+          <li>Operator UX tweaks that stuck.</li>
+          <li>Reliability improvements across hardware.</li>
+        </ul>
+        <p class="muted">Rewrite bullets with the points you actually shipped.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <span class="eyebrow">Gallery</span>
+      <h2>Drop feeds or diagrams</h2>
+      <p class="lead">Show before/after, overlays, or operator screens.</p>
+      <div class="media-grid" style="margin-top:18px;">
+        <div class="media-frame ratio ratio-16x9" data-label="Feed 1">
+          <img src="../assets/images/placeholder.svg" alt="Teleop gallery placeholder 1" loading="lazy" />
+        </div>
+        <div class="media-frame ratio ratio-16x9" data-label="Feed 2">
+          <img src="../assets/images/placeholder.svg" alt="Teleop gallery placeholder 2" loading="lazy" />
+        </div>
+        <div class="media-frame ratio ratio-16x9" data-label="Feed 3">
+          <img src="../assets/images/placeholder.svg" alt="Teleop gallery placeholder 3" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Pipeline</span>
+        <h2>Architecture notes</h2>
+        <p>Document streaming layers, compute budget, and resilience strategies.</p>
+      </article>
+      <article>
+        <span class="eyebrow">Results</span>
+        <h2>Impact</h2>
+        <ul class="list">
+          <li>Latency achieved across deployments.</li>
+          <li>Hours of teleop handled by the stack.</li>
+          <li>Operator satisfaction / retention improvements.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-cta">
+    <div class="container row">
+      <div>
+        <h2>Have a teleop problem?</h2>
+        <p class="muted">Happy to advise on perception, streaming, or ops playbooks.</p>
+      </div>
+      <div class="row" style="gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container row">
+    <p>© <span id="year"></span> Sarthak Das. All rights reserved.</p>
+    <div style="display:flex; gap:18px;">
+      <a class="muted" href="../legal/privacy.html">Privacy</a>
+      <a class="muted" href="../legal/terms.html">Terms</a>
+      <a class="muted" href="../legal/imprint.html">Imprint</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

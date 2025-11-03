@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deep Eutectic Solvent Lab Robot &mdash; Case Study</title>
+  <meta name="description" content="High-throughput DES sampling robot for lead-recovery research." />
+  <meta property="og:title" content="Deep Eutectic Solvent Lab Robot &mdash; Case Study" />
+  <meta property="og:description" content="How we automated viscous DES chemistry to accelerate lead recycling research." />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html#home" class="brand"><span class="brand-mark"></span><span>Sarthak Das</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#work" class="muted">Work</a>
+      <a href="../index.html#about" class="muted">About</a>
+      <a href="../index.html#writing" class="muted">Writing</a>
+      <a href="../index.html#contact" class="muted">Contact</a>
+    </div>
+    <button class="menu" id="openMenu" aria-label="Menu" title="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile sheet -->
+<div id="mobilePanel" aria-hidden="true">
+  <div class="sheet">
+    <div class="row" style="margin-bottom:14px;">
+      <strong>Menu</strong>
+      <button class="btn" id="closeMenu">Close</button>
+    </div>
+    <div class="stack">
+      <a href="../index.html#work" class="muted" onclick="hideMenu()">Work</a>
+      <a href="../index.html#about" class="muted" onclick="hideMenu()">About</a>
+      <a href="../index.html#writing" class="muted" onclick="hideMenu()">Writing</a>
+      <a href="../index.html#contact" class="muted" onclick="hideMenu()">Contact</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container grid grid-2">
+      <div>
+        <span class="eyebrow">Case Study</span>
+        <h1>Deep Eutectic Solvent Lab Robot</h1>
+        <p class="lead">A repurposed 3D printer that now runs fully automated sampling, filtering, and dilution workflows for lead-recovery research.</p>
+        <div class="row" style="gap:18px; flex-wrap:wrap; margin-top:20px; align-items:flex-start;">
+          <div>
+            <strong>Role</strong>
+            <p class="muted">Robotics Engineer · Systems Lead</p>
+          </div>
+          <div>
+            <strong>Timeline</strong>
+            <p class="muted">2024 R&D Program</p>
+          </div>
+          <div>
+            <strong>Stack</strong>
+            <p class="muted">Python, Raspberry Pi, G-code, AAS/AES</p>
+          </div>
+        </div>
+        <div class="row" style="gap:12px; justify-content:flex-start; margin-top:24px; flex-wrap:wrap;">
+          <a class="btn" href="../index.html#contact">Let's talk</a>
+        </div>
+      </div>
+      <div class="media-frame ratio ratio-4x3" data-label="Lab robot">
+        <img src="../assets/images/RobotICP.png" alt="Deep Eutectic Solvent sampling robot" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Context</span>
+        <h2>Solving viscous chemistry bottlenecks</h2>
+        <p class="lead">Deep eutectic solvents (DES) promise cleaner battery recycling, but their viscosity makes dissolution experiments painfully slow and hard to reproduce.</p>
+        <p>Each run required days of mixing to reach steady state, so we needed a platform that could babysit reactions around the clock, capture time-resolved data, and keep the process safe inside a lab.</p>
+      </article>
+      <article>
+        <span class="eyebrow">Goals</span>
+        <h2>What we optimised for</h2>
+        <ul class="list">
+          <li>High-throughput sampling to build spatial pollutant maps for AAS/AES analysis.</li>
+          <li>Repeatable control of dosing, agitation, and filtration parameters.</li>
+          <li>Full electrical certification so the system could run unattended in research facilities.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Process</span>
+        <h2>Automated workflow</h2>
+        <ol class="list">
+          <li>Dispense lead solids into DES-filled vials with a hopper and end effector controlled by custom G-code.</li>
+          <li>Run tuned stirring cycles, logging torque and time to capture reaction kinetics.</li>
+          <li>Extract solvent plus residual solids via syringe, then push the mixture through a filtration stage.</li>
+          <li>Micropipette precisely 20 microlitres into acid-filled vials, producing clean, dilution-ready samples.</li>
+        </ol>
+        <p class="muted">The full loop runs in ~400 seconds&mdash;slower than hand pipetting, but far more consistent and traceable.</p>
+      </article>
+      <article>
+        <span class="eyebrow">Control stack</span>
+        <h2>Repurposed hardware, fresh brains</h2>
+        <ul class="list">
+          <li>Modified 3D printer motion system now orchestrates linear axes, feeders, and custom tooling.</li>
+          <li>Python + Raspberry Pi supervise sequencing, safety interlocks, and sensor logging.</li>
+          <li>External electronics (pumps, valves, stirring motors) are driven through G-code extensions with checksum validation.</li>
+        </ul>
+        <p class="muted">This let us keep commodity mechanics while layering a bespoke electronics and software stack on top.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Impact</span>
+        <h2>Results in the lab</h2>
+        <ul class="list">
+          <li>Generated consistent sampling schedules so DES performance can be compared across dozens of solvents.</li>
+          <li>Captured time-synchronised logs that align with AAS/AES concentration outputs for faster pollutant mapping.</li>
+          <li>Produced datasets that overlay on real-world site data, helping teams trace pollutant origins in hours instead of weeks.</li>
+        </ul>
+      </article>
+      <article>
+        <span class="eyebrow">Next up</span>
+        <h2>Pushing throughput further</h2>
+        <p>Current focus: parallelise the cell array, tighten fluidics tolerances, and integrate adaptive mixing schedules so we can accelerate solvent discovery and ultimately replace smelting-based recycling entirely.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-cta">
+    <div class="container row">
+      <div>
+        <h2>Building lab automation?</h2>
+        <p class="muted">Happy to share learnings on retrofitting motion platforms or designing solvent-safe robotics.</p>
+      </div>
+      <div class="row" style="gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container row">
+    <p>© <span id="year"></span> Sarthak Das. All rights reserved.</p>
+    <div style="display:flex; gap:18px;">
+      <a class="muted" href="../legal/privacy.html">Privacy</a>
+      <a class="muted" href="../legal/terms.html">Terms</a>
+      <a class="muted" href="../legal/imprint.html">Imprint</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

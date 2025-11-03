@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Imprint — Sarthak Das</title>
+  <meta name="description" content="Imprint template for jurisdictions that require it." />
+  <meta property="og:title" content="Imprint — Sarthak Das" />
+  <meta property="og:description" content="Imprint template for jurisdictions that require it." />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html#home" class="brand"><span class="brand-mark"></span><span>Sarthak Das</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#work" class="muted">Work</a>
+      <a href="../index.html#about" class="muted">About</a>
+      <a href="../index.html#writing" class="muted">Writing</a>
+      <a href="../index.html#contact" class="muted">Contact</a>
+    </div>
+    <button class="menu" id="openMenu" aria-label="Menu" title="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile sheet -->
+<div id="mobilePanel" aria-hidden="true">
+  <div class="sheet">
+    <div class="row" style="margin-bottom:14px;">
+      <strong>Menu</strong>
+      <button class="btn" id="closeMenu">Close</button>
+    </div>
+    <div class="stack">
+      <a href="../index.html#work" class="muted" onclick="hideMenu()">Work</a>
+      <a href="../index.html#about" class="muted" onclick="hideMenu()">About</a>
+      <a href="../index.html#writing" class="muted" onclick="hideMenu()">Writing</a>
+      <a href="../index.html#contact" class="muted" onclick="hideMenu()">Contact</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section style="padding:84px 0; border-bottom:1px solid var(--line);">
+    <div class="container" style="max-width:760px; display:grid; gap:32px;">
+      <header>
+        <span class="eyebrow">Legal</span>
+        <h1>Imprint</h1>
+        <p class="lead">Provide the legally required contact details here.</p>
+      </header>
+
+      <section>
+        <h2>Responsible for content</h2>
+        <p>Add name, address, and contact email.</p>
+      </section>
+
+      <section>
+        <h2>VAT / Registration</h2>
+        <p>Include identifiers if relevant in your region.</p>
+      </section>
+
+      <section>
+        <h2>Dispute resolution</h2>
+        <p>Link to the appropriate authority if needed.</p>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container row">
+    <p>© <span id="year"></span> Sarthak Das. All rights reserved.</p>
+    <div style="display:flex; gap:18px;">
+      <a class="muted" href="../legal/privacy.html">Privacy</a>
+      <a class="muted" href="../legal/terms.html">Terms</a>
+      <a class="muted" href="../legal/imprint.html">Imprint</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

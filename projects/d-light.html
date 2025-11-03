@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>D-Light — Case Study</title>
+  <meta name="description" content="Six-dimensional RGB light painting rig that lets users draw holograms with dual joysticks." />
+  <meta property="og:title" content="D-Light — Case Study" />
+  <meta property="og:description" content="How D-Light turns dual-joystick input into volumetric light sculptures captured on camera." />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html#home" class="brand"><span class="brand-mark"></span><span>Sarthak Das</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#work" class="muted">Work</a>
+      <a href="../index.html#about" class="muted">About</a>
+      <a href="../index.html#writing" class="muted">Writing</a>
+      <a href="../index.html#contact" class="muted">Contact</a>
+    </div>
+    <button class="menu" id="openMenu" aria-label="Menu" title="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile sheet -->
+<div id="mobilePanel" aria-hidden="true">
+  <div class="sheet">
+    <div class="row" style="margin-bottom:14px;">
+      <strong>Menu</strong>
+      <button class="btn" id="closeMenu">Close</button>
+    </div>
+    <div class="stack">
+      <a href="../index.html#work" class="muted" onclick="hideMenu()">Work</a>
+      <a href="../index.html#about" class="muted" onclick="hideMenu()">About</a>
+      <a href="../index.html#writing" class="muted" onclick="hideMenu()">Writing</a>
+      <a href="../index.html#contact" class="muted" onclick="hideMenu()">Contact</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container grid grid-2">
+      <div>
+        <span class="eyebrow">Case Study</span>
+        <h1>D-Light</h1>
+        <p class="lead">Interactive RGB LED rig that maps dual-joystick motion into six-dimensional light sculptures, rendered through long-exposure photography.</p>
+        <div class="row" style="gap:18px; flex-wrap:wrap; margin-top:20px; align-items:flex-start;">
+          <div>
+            <strong>Role</strong>
+            <p class="muted">Hardware + Interaction Design</p>
+          </div>
+          <div>
+            <strong>Timeline</strong>
+            <p class="muted">Independent build</p>
+          </div>
+          <div>
+            <strong>Stack</strong>
+            <p class="muted">Dual joysticks, RGB LED, motion rig, DSLR capture</p>
+          </div>
+        </div>
+        <div class="row" style="gap:12px; justify-content:flex-start; margin-top:24px; flex-wrap:wrap;">
+          <a class="btn" href="../index.html#contact">Let's talk</a>
+        </div>
+      </div>
+      <div class="media-frame ratio ratio-4x3" data-label="Light sculpture">
+        <img src="../assets/images/D-Light.png" alt="Composite long-exposure photo produced by the D-Light hologram rig" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Concept</span>
+        <h2>Sketching with photons</h2>
+        <p class="lead">D-Light treats space as a canvas, pairing XYZ motion with RGB colour values so every gesture leaves a trace in six dimensions.</p>
+        <p>By coupling the joysticks to a lightweight LED gantry, the system lets anyone draw freehand volumes while colour modulation and intensity track alongside position. The result is a hologram-like trail that records exactly how the LED moved through space.</p>
+      </article>
+      <article>
+        <span class="eyebrow">Experience</span>
+        <h2>Feeling the light</h2>
+        <ul class="list">
+          <li>Left joystick handles vertical (Z) sweeps while the right joystick drives X/Y paths.</li>
+          <li>RGB channels are blended in real time, giving the user control over hue and brightness as they draw.</li>
+          <li>Visual feedback comes from the evolving light trail, encouraging playful, iterative sketching.</li>
+        </ul>
+        <p class="muted">Every motion is captured without lag, so the rig mirrors the user's handwork in three-dimensional light.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Rig</span>
+        <h2>Six degrees of freedom</h2>
+        <ul class="list">
+          <li>Custom motion assembly keeps the LED stable while translating smoothly across XYZ.</li>
+          <li>Dual-joystick input is normalised to maintain consistent speed regardless of travel direction.</li>
+          <li>Embedded controller buffers colour and position data, ensuring the light trail never gaps under rapid moves.</li>
+        </ul>
+      </article>
+      <article>
+        <span class="eyebrow">Capture</span>
+        <h2>Photography pipeline</h2>
+        <ul class="list">
+          <li>A fixed camera shoots bursts of long-exposure frames aligned to the gantry's coordinate system.</li>
+          <li>Images are stacked in post to reveal the full path, creating a volumetric impression of the drawing.</li>
+          <li>Timestamps sync motion and colour changes so composite renders match the artist's live gestures.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <span class="eyebrow">Gallery</span>
+      <h2>Light trails in motion</h2>
+      <p class="lead">A single session generates bursts of frames that stitch into luminous sculptures.</p>
+      <div class="media-grid" style="margin-top:18px;">
+        <div class="media-frame ratio ratio-16x9" data-label="D-Light capture">
+          <img src="../assets/images/D-Light.png" alt="Stacked long-exposure frames created with D-Light" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Impact</span>
+        <h2>New way to prototype light art</h2>
+        <ul class="list">
+          <li>Makes volumetric sketches accessible without VR headsets or complex laser setups.</li>
+          <li>Encourages collaborative sessions—one person drives while others direct colour palettes.</li>
+          <li>Produces consistent photo sequences that are easy to remix into short films or prints.</li>
+        </ul>
+      </article>
+      <article>
+        <span class="eyebrow">Next</span>
+        <h2>Pushing fidelity</h2>
+        <p>Future iterations explore programmable patterns layered on top of joystick input, motion smoothing for faster strokes, and direct-to-video renderers that animate light trails without needing manual compositing.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-cta">
+    <div class="container row">
+      <div>
+        <h2>Want to build interactive art?</h2>
+        <p class="muted">Let's chat about light painting systems, playful interfaces, or spatial capture rigs.</p>
+      </div>
+      <div class="row" style="gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container row">
+    <p>© <span id="year"></span> Sarthak Das. All rights reserved.</p>
+    <div style="display:flex; gap:18px;">
+      <a class="muted" href="../legal/privacy.html">Privacy</a>
+      <a class="muted" href="../legal/terms.html">Terms</a>
+      <a class="muted" href="../legal/imprint.html">Imprint</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sarthak Das</title>
+  <meta name="description" content="Sarthak Das — Robotics and ML Researcher" />
+  <meta property="og:title" content="Sarthak Das — Portfolio" />
+  <meta property="og:description" content="Founder & researcher building Python‑first robotics tools." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand"><span class="brand-mark"></span><span>Sarthak Das</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#work" class="muted">Work</a>
+        <a href="#about" class="muted">About</a>
+        <a href="#writing" class="muted">Writing</a>
+        <a href="#contact" class="muted">Contact</a>
+      </div>
+      <button class="menu" id="openMenu" aria-label="Menu" title="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Mobile sheet -->
+  <div id="mobilePanel" aria-hidden="true">
+    <div class="sheet">
+      <div class="row" style="margin-bottom:14px;">
+        <strong>Menu</strong>
+        <button class="btn" id="closeMenu">Close</button>
+      </div>
+      <div class="stack">
+        <a href="#work" class="muted" onclick="hideMenu()">Work</a>
+        <a href="#about" class="muted" onclick="hideMenu()">About</a>
+        <a href="#writing" class="muted" onclick="hideMenu()">Writing</a>
+        <a href="#contact" class="muted" onclick="hideMenu()">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section id="home">
+    <div class="container grid grid-2">
+      <div>
+        <span class="eyebrow">Available for collaborations</span>
+        <h1>Building the <span style="text-decoration:underline; text-decoration-color:#7777; text-underline-offset:6px;"> future</span> of robotics.</h1>
+        <p class="lead">I’m Sarthak — Founder & Researcher in Robotics & ML. I design and ship tools that make robots easier to program, from simulation to real‑world deployment.</p>
+        <div class="row" style="margin-top:18px; gap:12px;">
+          <a class="btn btn-primary" href="#work">See my work →</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <div class="row muted" style="margin-top:18px; gap:18px;">
+          <a class="muted" href="mailto:me@sarthakdas.com" aria-label="Email">✉️ Email</a>
+          <a class="muted" href="https://github.com/sarthakdas " target="_blank" rel="noreferrer" aria-label="GitHub">🐙 GitHub</a>
+          <a class="muted" href="https://www.linkedin.com/in/sarthakdas4/" target="_blank" rel="noreferrer" aria-label="LinkedIn">🔗 LinkedIn</a>
+          <a class="muted" href="https://scholar.google.com/citations?user=wOfNRY4AAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noreferrer" aria-label="Google Scholar">📚 Scholar</a>
+          <!-- <a class="muted" href="https://www.eigen-robotics.com" target="_blank" rel="noreferrer" aria-label="Website">🌐 Website</a> -->
+        </div>
+      </div>
+      <div>
+        <div class="hero-visual reveal">
+          <img src="assets/images/headshot.png" alt="Add your hero image here" loading="lazy" />
+          <!-- <div class="halo"></div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work">
+    <div class="container">
+      <span class="eyebrow">Selected Work</span>
+      <h2>Shipped projects</h2>
+      <p class="lead">A few things I’ve built and maintained.</p>
+      <div class="grid grid-3" style="margin-top:18px;">
+        <!-- Card 1 -->
+        <article class="card reveal">
+          <div class="card-media">
+            <div class="media-frame ratio ratio-16x9" data-label="OpenSource">
+              <img src="assets/images/Eigen-robotics.jpg" alt="Eigen Robotics project cover placeholder" loading="lazy" />
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 style="margin:10px 0 6px;">Eigen Robotics</h3>
+            <p class="muted">Python‑first robotics framework (think PyTorch for Robotics). 500+ users across top labs.</p>
+            <div class="row" style="margin:16px 0 10px; gap:8px; flex-wrap:wrap; justify-content:flex-start;">
+              <span class="tag">Python</span><span class="tag">Robotics</span><span class="tag">Monorepo</span><span class="tag">Open Source</span>
+            </div>
+            <div class="row" style="justify-content:flex-start; gap:10px; flex-wrap:wrap;">
+              <a class="btn" href="https://www.eigen-robotics.com" target="_blank" rel="noreferrer">Live ↗</a>
+              <a class="btn btn-ghost" href="https://github.com/Eigen-Robotics/Eigen-Robotics" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card reveal">
+          <div class="card-media">
+            <div class="media-frame ratio ratio-16x9" data-label="Machine Learning">
+              <img src="assets/images/RobotICP.png" alt="Automated Deep Eutectic Solvent sampling robot" loading="lazy" />
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 style="margin:10px 0 6px;">Deep Eutectic Solvent Lab Robot</h3>
+            <p class="muted">Automated sampling and dilution platform that accelerates DES lead-recovery studies with precise, time-stamped data.</p>
+            <div class="row" style="margin:16px 0 10px; gap:8px; flex-wrap:wrap; justify-content:flex-start;">
+              <span class="tag">Automation</span><span class="tag">Lab Robotics</span><span class="tag">Python</span>
+            </div>
+            <div class="row" style="justify-content:flex-start; gap:10px; flex-wrap:wrap;">
+              <a class="btn" href="projects/deep-eutectic-robot.html">Project page →</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article class="card reveal">
+          <div class="card-media">
+            <div class="media-frame ratio ratio-16x9" data-label="Hardware">
+              <img src="assets/images/D-Light.png" alt="Long-exposure light painting from the D-Light hologram rig" loading="lazy" />
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 style="margin:10px 0 6px;">D-Light Hologram Rig</h3>
+            <p class="muted">Six-DOF RGB LED controller that lets users sketch freeform holograms captured as luminous light trails.</p>
+            <div class="row" style="margin:16px 0 10px; gap:8px; flex-wrap:wrap; justify-content:flex-start;">
+              <span class="tag">Hardware</span><span class="tag">Interaction</span><span class="tag">LED</span><span class="tag">Imaging</span>
+            </div>
+            <div class="row" style="justify-content:flex-start; gap:10px; flex-wrap:wrap;">
+              <a class="btn" href="projects/d-light.html">Project page →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container grid" style="gap:24px;">
+      <div>
+        <span class="eyebrow">About</span>
+        <h2>A bit about me</h2>
+        <p class="lead">Robotics researcher and builder shipping Python-first tooling, embodied AI, and human-in-the-loop automation.</p>
+      </div>
+      <div class="grid grid-2" style="gap:24px;">
+        <article class="card reveal">
+          <div class="card-body">
+            <h3 style="margin:0 0 6px;">Background</h3>
+            <p class="muted">Robotics tooling across research labs, startups, and manufacturing floors.</p>
+            <ul class="list">
+              <li>Robotics research scientist at Huawei, building Ark and pushing in-context learning.</li>
+              <li>Founder and operator across YC Start-up School and Imperial Chocolate, blending hardware, ML, and experience design.</li>
+              <li>Hands-on with autonomy stacks, perception, and LLM-driven robotics from concept to deployment.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-body">
+            <h3 style="margin:0 0 6px;">Education</h3>
+            <p class="muted">Imperial College London.</p>
+            <ul class="list">
+              <li>MSc Computer Science (Robotics & Machine Learning)</li>
+              <li>BEng Design Engineering</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="grid grid-2" style="gap:24px;">
+        <article class="card reveal">
+          <div class="card-body">
+            <h3 style="margin:0 0 6px;">Research & Papers</h3>
+            <p class="muted">Open-source contributions advancing robot learning.</p>
+            <ul class="list">
+              <li><a class="muted" href="https://arxiv.org/pdf/2506.21628" target="_blank" rel="noreferrer">ARK: An Open-source Python-based Framework for Robot Learning</a>.</li>
+              <li><a class="muted" href="https://openpyro-a1.github.io" target="_blank" rel="noreferrer">OpenPyro-A1: Cheap Bimanual Robot</a>.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="grid" style="gap:22px;">
+        <article class="card reveal"><div class="card-body">
+          <div class="row"><strong>Robotics Research Scientist</strong><span class="muted">Huawei · Oct 2024—Present</span></div>
+          <ul class="list">
+            <li>Lead the design and development of <a class="muted" href="https://github.com/Robotics-Ark/ark_framework" target="_blank" rel="noreferrer">Ark</a>, a lightweight Python-first robotics framework adopted at Imperial, UCL, and TUM with 1,000+ downloads.</li>
+            <li>Engineered no-code pipelines to collect, train, and deploy Pi0 and OpenVLA models for manipulation fleets.</li>
+            <li>Developed an active-learning system identification workflow using Bayesian optimization to estimate object mass within +/- 100 g.</li>
+          </ul>
+        </div></article>
+        <!-- <article class="card reveal"><div class="card-body">
+          <div class="row"><strong>Founder, Start-up School</strong><span class="muted">Y Combinator · Jun 2025—Jul 2025</span></div>
+          <ul class="list">
+            <li>Advised by Fei-Fei Li and Chelsea Finn on commercialising robotic software informed by emerging research.</li>
+            <li>Selected as one of the top researchers and entrepreneurs shaping next-generation robotics companies.</li>
+          </ul>
+        </div></article> -->
+        <article class="card reveal"><div class="card-body">
+          <div class="row"><strong>Robotic Systems (R&amp;D) Engineer</strong><span class="muted">PerkinElmer · Apr 2023—Jul 2023</span></div>
+          <ul class="list">
+            <li>Built an 85% accuracy labware deck verification model using PyTorch, TensorFlow, and OpenCV on AWS production lines.</li>
+            <li>Delivered microliter-precision liquid level detection via U-Net segmentation to unlock automated QC.</li>
+            <li>Planned a federated ML strategy aligned with FDA guidance for deployment across 1,000+ instruments.</li>
+          </ul>
+        </div></article>
+        <article class="card reveal"><div class="card-body">
+          <div class="row"><strong>Founder</strong><span class="muted">Imperial Chocolate · Apr 2022—Present</span></div>
+          <ul class="list">
+            <li>Craft exclusive chocolate experiences for world-leading universities and Diageo, celebrating rare cacao.</li>
+            <li>Collaborate with designers and chocolatiers serving the Royal Family, Bill Gates and Elon Musk.</li>
+          </ul>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section id="writing">
+    <div class="container">
+      <span class="eyebrow">Writing</span>
+      <h2>Essays & notes</h2>
+      <p class="lead">Occasional thoughts on robotics, product, and research.</p>
+      <div class="grid grid-2" style="gap:22px; margin-top:18px;">
+        <article class="card reveal">
+          <div class="card-media">
+            <div class="media-frame ratio ratio-16x9" data-label="Article cover">
+              <img src="assets/images/placeholder.svg" alt="Three codebases post cover placeholder" loading="lazy" />
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 style="margin:0 0 6px;">The Three‑Codebases Problem in Robotics</h3>
+            <p class="muted">Why sim A (train), sim B (validate), and real robots fracture teams—and how to fix it.</p>
+            <a class="btn btn-ghost" href="writing/three-codebases.html">Read →</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-media">
+            <div class="media-frame ratio ratio-16x9" data-label="Article cover">
+              <img src="assets/images/placeholder.svg" alt="Python-first robotics notes cover placeholder" loading="lazy" />
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 style="margin:0 0 6px;">Python‑First Robotics: Design Notes</h3>
+            <p class="muted">Architectural decisions behind a unified node‑based robotics stack.</p>
+            <a class="btn btn-ghost" href="writing/python-first.html">Read →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container grid grid-2">
+      <article>
+        <span class="eyebrow">Contact</span>
+        <h2>Let’s build something</h2>
+        <p class="lead">Email me or drop a note—happy to chat collaborations, research, or product.</p>
+        <form class="reveal" onsubmit="event.preventDefault(); alert('Thanks! I\'ll get back to you.');" style="margin-top:14px;">
+          <div class="grid" style="gap:12px;">
+            <input required placeholder="Your name" style="padding:12px 14px; border-radius:12px; border:1px solid var(--line); background:var(--surface); color:var(--text);" />
+            <input required type="email" placeholder="Your email" style="padding:12px 14px; border-radius:12px; border:1px solid var(--line); background:var(--surface); color:var(--text);" />
+            <textarea required rows="6" placeholder="Tell me a bit about your project…" style="padding:12px 14px; border-radius:12px; border:1px solid var(--line); background:var(--surface); color:var(--text);"></textarea>
+            <button class="btn btn-primary" type="submit">Send</button>
+          </div>
+        </form>
+      </article>
+      <article class="reveal">
+        <div class="grid" style="gap:12px; margin-top:28px;">
+          <a class="link-tile" href="mailto:sarthak@example.com"><span>✉️ sarthak@example.com</span><span>↗</span></a>
+          <a class="link-tile" href="https://github.com/" target="_blank" rel="noreferrer"><span>🐙 github.com/sarthak</span><span>↗</span></a>
+          <a class="link-tile" href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><span>🔗 linkedin.com/in/sarthak</span><span>↗</span></a>
+          <a class="link-tile" href="https://scholar.google.com/citations?user=wOfNRY4AAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noreferrer"><span>📚 scholar.google.com/wOfNRY4</span><span>↗</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container row">
+      <p>© <span id="year"></span> Sarthak Das. All rights reserved.</p>
+      <!-- <div style="display:flex; gap:18px;">
+        <a class="muted" href="legal/privacy.html">Privacy</a>
+        <a class="muted" href="legal/terms.html">Terms</a>
+        <a class="muted" href="legal/imprint.html">Imprint</a>
+      </div> -->
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

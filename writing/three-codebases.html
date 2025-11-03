@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Three-Codebases Problem — Writing</title>
+  <meta name="description" content="Writing template for the three codebases essay." />
+  <meta property="og:title" content="The Three-Codebases Problem — Writing" />
+  <meta property="og:description" content="Writing template for the three codebases essay." />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html#home" class="brand"><span class="brand-mark"></span><span>Sarthak Das</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#work" class="muted">Work</a>
+      <a href="../index.html#about" class="muted">About</a>
+      <a href="../index.html#writing" class="muted">Writing</a>
+      <a href="../index.html#contact" class="muted">Contact</a>
+    </div>
+    <button class="menu" id="openMenu" aria-label="Menu" title="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile sheet -->
+<div id="mobilePanel" aria-hidden="true">
+  <div class="sheet">
+    <div class="row" style="margin-bottom:14px;">
+      <strong>Menu</strong>
+      <button class="btn" id="closeMenu">Close</button>
+    </div>
+    <div class="stack">
+      <a href="../index.html#work" class="muted" onclick="hideMenu()">Work</a>
+      <a href="../index.html#about" class="muted" onclick="hideMenu()">About</a>
+      <a href="../index.html#writing" class="muted" onclick="hideMenu()">Writing</a>
+      <a href="../index.html#contact" class="muted" onclick="hideMenu()">Contact</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <article style="padding:84px 0; border-bottom:1px solid var(--line);">
+    <div class="container" style="max-width:760px;">
+      <header class="reveal" style="margin-bottom:48px;">
+        <span class="eyebrow">Essay</span>
+        <h1>The Three-Codebases Problem in Robotics</h1>
+        <p class="lead">Replace this with the hook for the post. Introduce the tension and why it matters.</p>
+        <div class="row" style="gap:18px; flex-wrap:wrap; align-items:flex-start; margin-top:24px;">
+          <span class="muted">Last updated: <time datetime="2024-01-01">Add date</time></span>
+          <span class="muted">Reading time: ~8 min</span>
+        </div>
+      </header>
+
+      <figure class="media-frame ratio ratio-16x9 reveal" data-label="Hero image">
+        <img src="../assets/images/placeholder.svg" alt="Essay hero placeholder" loading="lazy" />
+      </figure>
+
+      <section class="reveal" style="margin-top:48px; display:grid; gap:32px;">
+        <p>Use this intro section to outline the three environments teams juggle—training, validation, and on-robot code.</p>
+        <h2>1. Training rig drift</h2>
+        <p>Lay out the challenges you see with the training stack. Mention tooling, file formats, or infra constraints.</p>
+        <h2>2. Validation mismatch</h2>
+        <p>Explain how staging or sim validation diverges from production robots. Add anecdotes or data.</p>
+        <h2>3. Deployment chaos</h2>
+        <p>Document the symptoms you’ve seen in real labs: manual patching, drift, or missing observability.</p>
+        <h2>Closing the gap</h2>
+        <p>Wrap with the principles or framework you recommend. Link out to repos, papers, or tooling.</p>
+      </section>
+
+      <section class="reveal" style="margin-top:48px; border-left:3px solid var(--line); padding-left:20px; color:var(--muted);">
+        <p>Add a callout, quote, or lesson learned. Great for emphasising stakes.</p>
+      </section>
+
+      <footer class="reveal" style="margin-top:60px; display:grid; gap:20px;">
+        <div class="row" style="gap:12px; justify-content:flex-start; flex-wrap:wrap;">
+          <a class="btn" href="../index.html#contact">Discuss this</a>
+          <a class="btn btn-ghost" href="../writing/python-first.html">Next essay →</a>
+        </div>
+        <p class="muted">Drop links to references, datasets, or repos here.</p>
+      </footer>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="container row">
+    <p>© <span id="year"></span> Sarthak Das. All rights reserved.</p>
+    <div style="display:flex; gap:18px;">
+      <a class="muted" href="../legal/privacy.html">Privacy</a>
+      <a class="muted" href="../legal/terms.html">Terms</a>
+      <a class="muted" href="../legal/imprint.html">Imprint</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

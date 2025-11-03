@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Python-First Robotics — Writing</title>
+  <meta name="description" content="Writing template for the Python-first robotics notes." />
+  <meta property="og:title" content="Python-First Robotics — Writing" />
+  <meta property="og:description" content="Writing template for the Python-first robotics notes." />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html#home" class="brand"><span class="brand-mark"></span><span>Sarthak Das</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#work" class="muted">Work</a>
+      <a href="../index.html#about" class="muted">About</a>
+      <a href="../index.html#writing" class="muted">Writing</a>
+      <a href="../index.html#contact" class="muted">Contact</a>
+    </div>
+    <button class="menu" id="openMenu" aria-label="Menu" title="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile sheet -->
+<div id="mobilePanel" aria-hidden="true">
+  <div class="sheet">
+    <div class="row" style="margin-bottom:14px;">
+      <strong>Menu</strong>
+      <button class="btn" id="closeMenu">Close</button>
+    </div>
+    <div class="stack">
+      <a href="../index.html#work" class="muted" onclick="hideMenu()">Work</a>
+      <a href="../index.html#about" class="muted" onclick="hideMenu()">About</a>
+      <a href="../index.html#writing" class="muted" onclick="hideMenu()">Writing</a>
+      <a href="../index.html#contact" class="muted" onclick="hideMenu()">Contact</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <article style="padding:84px 0; border-bottom:1px solid var(--line);">
+    <div class="container" style="max-width:760px;">
+      <header class="reveal" style="margin-bottom:48px;">
+        <span class="eyebrow">Notes</span>
+        <h1>Python-First Robotics: Design Notes</h1>
+        <p class="lead">Outline why Python at the edge matters for your stack. Swap copy as needed.</p>
+        <div class="row" style="gap:18px; flex-wrap:wrap; align-items:flex-start; margin-top:24px;">
+          <span class="muted">Last updated: <time datetime="2024-01-01">Add date</time></span>
+          <span class="muted">Reading time: ~6 min</span>
+        </div>
+      </header>
+
+      <figure class="media-frame ratio ratio-16x9 reveal" data-label="Hero image">
+        <img src="../assets/images/placeholder.svg" alt="Python-first robotics notes hero placeholder" loading="lazy" />
+      </figure>
+
+      <section class="reveal" style="margin-top:48px; display:grid; gap:32px;">
+        <h2>Why Python</h2>
+        <p>Kick off with the developer experience wins or turnaround time improvements you’ve seen.</p>
+        <h2>Runtime considerations</h2>
+        <p>Document how you handle determinism, scheduling, or bindings. Mention tools like Nuitka, PyPy, or C++ extensions.</p>
+        <h2>Patterns that worked</h2>
+        <ul class="list">
+          <li>Composable nodes or services.</li>
+          <li>Tooling for testing and deployment.</li>
+          <li>Observability / logging setups.</li>
+        </ul>
+        <h2>Where it breaks</h2>
+        <p>List the failure modes or trade-offs and how you mitigated them.</p>
+      </section>
+
+      <footer class="reveal" style="margin-top:60px; display:grid; gap:20px;">
+        <div class="row" style="gap:12px; justify-content:flex-start; flex-wrap:wrap;">
+          <a class="btn" href="../index.html#contact">Collaborate</a>
+          <a class="btn btn-ghost" href="../writing/three-codebases.html">Previous essay →</a>
+        </div>
+        <p class="muted">Use this space for changelog notes or external links.</p>
+      </footer>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="container row">
+    <p>© <span id="year"></span> Sarthak Das. All rights reserved.</p>
+    <div style="display:flex; gap:18px;">
+      <a class="muted" href="../legal/privacy.html">Privacy</a>
+      <a class="muted" href="../legal/terms.html">Terms</a>
+      <a class="muted" href="../legal/imprint.html">Imprint</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
